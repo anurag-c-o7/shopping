@@ -18,4 +18,8 @@ class ShoppingApplicationTests {
 
 	}
 
+	fun mainDemo() {
+
+	}
+
 }
