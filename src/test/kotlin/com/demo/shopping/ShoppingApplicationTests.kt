@@ -22,9 +22,9 @@ class ShoppingApplicationTests {
 
 	}
 
-	fun mainDemo() {
+	//fun mainDemo() {
 
-	}
+	//}
 
 	fun mainDemo1() {
 
