@@ -26,4 +26,8 @@ class ShoppingApplicationTests {
 
 	}
 
+	fun feature1Demo() {
+
+	}
+
 }
