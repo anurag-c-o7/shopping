@@ -22,6 +22,10 @@ class ShoppingApplicationTests {
 
 	}
 
+	fun feature2Demo() {
+
+	}
+
 	//fun mainDemo() {
 
 	//}
@@ -33,9 +37,4 @@ class ShoppingApplicationTests {
 	fun feature1Demo() {
 
 	}
-
-	fun feature2Demo() {
-
-	}
-
 }
