@@ -15,7 +15,15 @@ class ShoppingApplicationTests {
 	}
 
 	fun newDemo1() {
+   
+  }
+
+	fun newDemo() {
 
 	}
 
-}
+	fun mainDemo() {
+
+	}
+
+
