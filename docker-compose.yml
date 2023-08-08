@@ -1,0 +1,50 @@
+services:
+#  app:
+#    image: demo-docker-app
+#    build:
+#      context: .
+#    container_name: app
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - db
+#    environment:
+#      SPRING_APPLICATION_JSON: '{
+#              "spring.datasource.url"  : "jdbc:postgresql://db:5432/demo",
+#              "spring.datasource.username" : "postgres",
+#              "spring.datasource.password" : "anurag@123",
+#              "spring.jpa.hibernate.ddl-auto" : "update"
+#            }'
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/demo
+#      - SPRING_DATASOURCE_USERNAME=postgres
+#      - SPRING_DATASOURCE_PASSWORD=anurag@123
+#      - SPRING_JPA_HIBERNATE_DDL_AUTO=create
+
+  db:
+    image: 'postgres:13.1-alpine'
+    volumes:
+      - pgdb:/var/lib/postgresql/data
+#      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=anurag@123
+      - POSTGRES_DB=shopping
+
+volumes:
+  pgdb:
+
+#  spring:
+#  datasource:
+#      url: jdbc:postgresql://db:5432/demo
+#      username: postgres
+#      password: anurag@123
+#      driver-class-name: org.postgresql.Driver
+#  jpa:
+#    show-sql: false
+#    hibernate:
+#    ddl-auto: create
+
