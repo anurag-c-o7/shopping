@@ -1,6 +1,7 @@
 package com.demo.shopping.services
 
 import com.demo.shopping.DTO.CartDTO
+import com.demo.shopping.DTO.OrderDTO
 import com.demo.shopping.beans.Cart
 import com.demo.shopping.beans.Order
 import com.demo.shopping.beans.Product
@@ -47,6 +48,10 @@ class OrderService(
 
             cartRepository.save(cart)
         }
+    }
+
+    fun cancelOrder(orderDTO:OrderDTO) {
+        orderRepository.cancelOrder(orderDTO.orderId)
     }
 
 
